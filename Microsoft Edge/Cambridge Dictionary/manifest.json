@@ -1,0 +1,27 @@
+{
+    "name": "Cambridge Dictionary",
+    "version": "1.1",
+    "manifest_version": 2,
+    "description": "Look up Cambridge Advanced Learner's Dictionary for the selected text",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "browser_action": {
+       
+    },
+    "background": {
+        "page": "background.html",
+        "persistent": true
+    },
+    "permissions": [
+        "activeTab",
+        "contextMenus"
+    ],
+    "author": "Quy Nguyen",
+    "-ms-preload": {
+        "backgroundScript": "backgroundScriptsAPIBridge.js",
+        "contentScript": "contentScriptsAPIBridge.js"
+    }
+}
